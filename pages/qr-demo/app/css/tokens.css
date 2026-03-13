@@ -1,0 +1,76 @@
+:root {
+	/* Typography */
+	--font-sans: "Tajawal", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+	/* Colors */
+	--bg0: #070a12;
+	--bg1: #0b1020;
+	--bg2: rgba(255, 255, 255, 0.06);
+	--bg3: rgba(255, 255, 255, 0.09);
+	--stroke: rgba(255, 255, 255, 0.10);
+	--stroke2: rgba(255, 255, 255, 0.14);
+
+	--text: rgba(255, 255, 255, 0.92);
+	--muted: rgba(255, 255, 255, 0.70);
+	--subtle: rgba(255, 255, 255, 0.56);
+
+	--primary: #7c3aed;
+	--primary2: #22d3ee;
+	--good: #22c55e;
+	--warn: #f59e0b;
+	--bad: #ef4444;
+
+	--grad-hero: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(34, 211, 238, 0.85));
+	--grad-card: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.05));
+
+	/* Radii */
+	--r-xs: 10px;
+	--r-sm: 14px;
+	--r-md: 18px;
+	--r-lg: 22px;
+	--r-xl: 28px;
+
+	/* Shadows */
+	--shadow-1: 0 10px 30px rgba(0, 0, 0, 0.35);
+	--shadow-2: 0 18px 60px rgba(0, 0, 0, 0.45);
+	--glow: 0 0 60px rgba(124, 58, 237, 0.35);
+
+	/* Layout */
+	--container: 1100px;
+	--gutter: 18px;
+	--appbar-h: 64px;
+
+	/* Motion */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+	--t-fast: 140ms;
+	--t: 220ms;
+	--t-slow: 480ms;
+
+	/* Page background tokens (used by base.css) */
+	--page-rad1: radial-gradient(1200px 900px at 70% 0%, rgba(124, 58, 237, 0.18), transparent 55%);
+	--page-rad2: radial-gradient(900px 700px at 10% 70%, rgba(34, 211, 238, 0.14), transparent 50%);
+	--page-linear: linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+/* Light theme overrides */
+html[data-theme="light"] {
+	--bg0: #f7f8ff;
+	--bg1: #ffffff;
+	--bg2: rgba(15, 23, 42, 0.05);
+	--bg3: rgba(15, 23, 42, 0.07);
+	--stroke: rgba(15, 23, 42, 0.10);
+	--stroke2: rgba(15, 23, 42, 0.16);
+
+	--text: rgba(15, 23, 42, 0.92);
+	--muted: rgba(15, 23, 42, 0.70);
+	--subtle: rgba(15, 23, 42, 0.56);
+
+	--shadow-1: 0 10px 30px rgba(15, 23, 42, 0.12);
+	--shadow-2: 0 18px 60px rgba(15, 23, 42, 0.16);
+	--glow: 0 0 60px rgba(34, 211, 238, 0.22);
+
+	--page-rad1: radial-gradient(1200px 900px at 70% 0%, rgba(124, 58, 237, 0.12), transparent 60%);
+	--page-rad2: radial-gradient(900px 700px at 10% 70%, rgba(34, 211, 238, 0.12), transparent 55%);
+	--page-linear: linear-gradient(180deg, var(--bg0), var(--bg1));
+}
