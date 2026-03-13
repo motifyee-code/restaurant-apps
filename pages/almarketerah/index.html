@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Marketera | وكالة تسويق وإعلانات رقمية</title>
+		<meta
+			name="description"
+			content="Marketera وكالة متخصصة في الإعلانات الممولة وإدارة الحملات: Meta (Facebook/Instagram)، Google Ads، TikTok/Snap، إدارة صفحات، تصميم محتوى، وتتبع وقياس الأداء."
+		/>
+		<meta name="theme-color" content="#0b1020" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Marketera | وكالة تسويق وإعلانات رقمية" />
+		<meta
+			property="og:description"
+			content="إعلانات ممولة، إدارة حملات، إدارة صفحات، تصميم محتوى، وتقارير أداء واضحة."
+		/>
+		<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Inter:wght@400;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/main.css" />
+	</head>
+	<body>
+		<div class="bg" aria-hidden="true">
+			<div class="bg__orb bg__orb--1"></div>
+			<div class="bg__orb bg__orb--2"></div>
+			<div class="bg__grid"></div>
+		</div>
+
+		<header class="header">
+			<div class="container header__inner">
+				<a class="brand" href="#top" aria-label="Marketera Home">
+					<img class="brand__logo" src="./assets/logo.svg" alt="" />
+					<span class="brand__name">Marketera</span>
+				</a>
+
+				<nav class="nav" aria-label="Primary">
+					<a class="nav__link" href="#services" data-i18n="nav_services"
+						>الخدمات</a
+					>
+					<a class="nav__link" href="#packages" data-i18n="nav_packages"
+						>الباقات</a
+					>
+					<a class="nav__link" href="#proof" data-i18n="nav_achievements"
+						>الإنجازات</a
+					>
+					<a class="nav__link" href="#reviews" data-i18n="nav_reviews"
+						>آراء العملاء</a
+					>
+					<a class="nav__link" href="#contact" data-i18n="nav_contact"
+						>تواصل معنا</a
+					>
+				</nav>
+
+				<div class="header__cta">
+					<button
+						class="btn btn--ghost btn--sm header__tool"
+						type="button"
+						data-lang-toggle
+						aria-label="Switch language"
+					>
+						EN
+					</button>
+					<button
+						class="btn btn--ghost btn--sm header__tool"
+						type="button"
+						data-theme-toggle
+						aria-label="Toggle theme"
+					>
+						☾
+					</button>
+					<a
+						class="btn btn--ghost header__social header__social--icon"
+						href="https://www.facebook.com/AlMarkterah/"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="Facebook"
+						title="Facebook"
+					>
+						<svg
+							class="header__socialIcon"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<path
+								d="M14 8.5V7c0-1.1.9-2 2-2h2V2h-2c-2.76 0-5 2.24-5 5v1.5H8v3h3V22h3V11.5h3l1-3H14Z"
+								fill="currentColor"
+							/>
+						</svg>
+					</a>
+					<button
+						class="iconbtn header__menu"
+						type="button"
+						aria-label="Open menu"
+						aria-expanded="false"
+						data-menu-button
+					>
+						<svg
+							class="header__menuIcon"
+							width="22"
+							height="22"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							focusable="false"
+						>
+							<path
+								d="M4 7H20M4 12H20M4 17H20"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="mobile" data-mobile-menu hidden>
+				<div class="mobile__inner container">
+					<a class="mobile__link" href="#services" data-i18n="nav_services"
+						>الخدمات</a
+					>
+					<a class="mobile__link" href="#packages" data-i18n="nav_packages"
+						>الباقات</a
+					>
+					<a class="mobile__link" href="#proof" data-i18n="nav_achievements"
+						>الإنجازات</a
+					>
+					<a class="mobile__link" href="#reviews" data-i18n="nav_reviews"
+						>آراء العملاء</a
+					>
+					<a class="mobile__link" href="#contact" data-i18n="nav_contact"
+						>تواصل معنا</a
+					>
+					<div class="mobile__actions">
+						<div class="mobile__toggles">
+							<button
+								class="btn btn--ghost btn--full btn--sm"
+								type="button"
+								data-lang-toggle
+							>
+								EN
+							</button>
+							<button
+								class="btn btn--ghost btn--full btn--sm"
+								type="button"
+								data-theme-toggle
+							>
+								☾
+							</button>
+						</div>
+						<a
+							class="btn btn--ghost btn--full"
+							href="https://www.facebook.com/AlMarkterah/"
+							target="_blank"
+							rel="noreferrer"
+							data-i18n="cta_message_facebook"
+							>Message on Facebook</a
+						>
+						<a class="btn btn--full" href="#contact" data-i18n="cta_quote"
+							>اطلب عرض سعر</a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main id="top">
+			<section class="hero">
+				<div class="container hero__inner">
+					<div class="hero__copy">
+						<div class="pill">
+							<span data-i18n="pill_channels">Meta • Google • TikTok • Snapchat</span>
+							<span class="pill__dot" aria-hidden="true"></span>
+							<span data-i18n="pill_creative">Creative • Content • Pages</span>
+						</div>
+
+						<h1 class="hero__title">
+							<span data-i18n="hero_title_main">وكالة تسويق وإعلانات رقمية</span>
+							<span class="hero__titleAccent" data-i18n="hero_title_accent"
+								>تُحوّل الإعلانات لنتائج</span
+							>
+						</h1>
+
+						<p class="hero__subtitle" data-i18n="hero_subtitle">
+							نخطط ونبني ونُحسّن الحملات المدفوعة + ندير صفحاتك + نصنع محتوى مقنع
+							— مع تتبع دقيق وتقارير واضحة.
+						</p>
+
+						<div class="hero__actions">
+							<a class="btn btn--lg" href="#contact" data-i18n="hero_cta_primary"
+								>احصل على خطة مجانية</a
+							>
+							<a
+								class="btn btn--ghost btn--lg"
+								href="#services"
+								data-i18n="hero_cta_secondary"
+								>استعرض الخدمات</a
+							>
+						</div>
+
+						<div class="hero__micro">
+							<div class="micro">
+								<span class="micro__k" data-i18n="micro_focus_k">التركيز</span>
+								<span class="micro__v" data-i18n="micro_focus_v"
+									>أداء + شفافية + اختبار مستمر</span
+								>
+							</div>
+							<div class="micro">
+								<span class="micro__k" data-i18n="micro_delivery_k"
+									>التسليم</span
+								>
+								<span class="micro__v" data-i18n="micro_delivery_v"
+									>تقارير أسبوعية / شهرية</span
+								>
+							</div>
+							<div class="micro">
+								<span class="micro__k" data-i18n="micro_comms_k">التواصل</span>
+								<span class="micro__v" data-i18n="micro_comms_v"
+									>Email + Facebook</span
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__card">
+						<div class="card card--glow">
+							<div class="card__top">
+								<div class="card__badge" data-i18n="card_badge">
+									Marketera System
+								</div>
+								<div class="card__title" data-i18n="card_title">
+									حلقة نمو أسبوعية
+								</div>
+								<div class="card__desc" data-i18n="card_desc">
+									تجربة → تحليل → تحسين → توسيع
+								</div>
+							</div>
+
+							<div class="card__grid">
+								<div class="mini">
+									<div class="mini__title" data-i18n="mini_tracking_t">
+										Tracking
+									</div>
+									<div class="mini__desc" data-i18n="mini_tracking_d">
+										Pixel + CAPI + UTM
+									</div>
+								</div>
+								<div class="mini">
+									<div class="mini__title" data-i18n="mini_creative_t">
+										Creative
+									</div>
+									<div class="mini__desc" data-i18n="mini_creative_d">
+										Hooks + Formats + Testing
+									</div>
+								</div>
+								<div class="mini">
+									<div class="mini__title" data-i18n="mini_opt_t">
+										Optimization
+									</div>
+									<div class="mini__desc" data-i18n="mini_opt_d">
+										Budget + Bidding + Audiences
+									</div>
+								</div>
+								<div class="mini">
+									<div class="mini__title" data-i18n="mini_report_t">
+										Reporting
+									</div>
+									<div class="mini__desc" data-i18n="mini_report_d">
+										Dashboards + Insights
+									</div>
+								</div>
+							</div>
+
+							<div class="card__cta">
+								<a class="btn btn--full" href="#contact" data-i18n="card_cta"
+									>ابدأ الآن</a
+								>
+								<a
+									class="btn btn--ghost btn--full"
+									href="mailto:almarketerah@garsony.xyz"
+									data-i18n="card_email"
+									>راسلنا</a
+								>
+							</div>
+							<div class="card__note" data-i18n="card_note">
+								نشتغل على حساباتك أنت — أنت المالك، ونحن الشريك.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="marquee" aria-label="Services marquee">
+					<div class="marquee__track">
+						<span>Meta Ads</span>
+						<span>Google Ads</span>
+						<span>TikTok Ads</span>
+						<span>Snap Ads</span>
+						<span>Social Media Management</span>
+						<span>Content & Design</span>
+						<span>Landing Pages</span>
+						<span>Analytics & CRO</span>
+						<span>Meta Ads</span>
+						<span>Google Ads</span>
+						<span>TikTok Ads</span>
+						<span>Snap Ads</span>
+						<span>Social Media Management</span>
+						<span>Content & Design</span>
+						<span>Landing Pages</span>
+						<span>Analytics & CRO</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="section">
+				<div class="container">
+					<div class="section__head">
+						<h2 class="h2" data-i18n="services_title">الخدمات</h2>
+						<p class="lead" data-i18n="services_lead">
+							كل ما تحتاجه لزيادة المبيعات/العملاء — من الاستراتيجية لحد التنفيذ
+							والتحسين.
+						</p>
+					</div>
+
+					<div class="grid">
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">M</div>
+							<h3 class="feature__title" data-i18n="svc_meta_title">
+								إعلانات Meta (FB/IG)
+							</h3>
+							<p class="feature__desc" data-i18n="svc_meta_desc">
+								حملات Leads / Sales / Messages مع اختبار مستمر.
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">G</div>
+							<h3 class="feature__title" data-i18n="svc_google_title">
+								Google Ads
+							</h3>
+							<p class="feature__desc" data-i18n="svc_google_desc">
+								Search + Performance Max + YouTube حسب الهدف.
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">T</div>
+							<h3 class="feature__title" data-i18n="svc_tiktok_title">
+								TikTok / Snap Ads
+							</h3>
+							<p class="feature__desc" data-i18n="svc_tiktok_desc">
+								Creative-first للوصول السريع + جمهور جديد.
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">📈</div>
+							<h3 class="feature__title" data-i18n="svc_strategy_title">
+								استراتيجية + Funnel
+							</h3>
+							<p class="feature__desc" data-i18n="svc_strategy_desc">
+								تقسيم الجمهور + عروض + رسائل + خطّة قياس.
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">🎨</div>
+							<h3 class="feature__title" data-i18n="svc_creative_title">
+								تصميم ومحتوى
+							</h3>
+							<p class="feature__desc" data-i18n="svc_creative_desc">
+								إعلانات، Reels، UGC scripts، وBrand assets.
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">🧭</div>
+							<h3 class="feature__title" data-i18n="svc_pages_title">
+								إدارة صفحات
+							</h3>
+							<p class="feature__desc" data-i18n="svc_pages_desc">
+								خطة نشر + Community + رسائل + تقارير تفاعل.
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">🧩</div>
+							<h3 class="feature__title" data-i18n="svc_lp_title">
+								Landing Pages
+							</h3>
+							<p class="feature__desc" data-i18n="svc_lp_desc">
+								صفحات هبوط سريعة بتحويل أعلى (CRO).
+							</p>
+						</article>
+						<article class="feature">
+							<div class="feature__icon" aria-hidden="true">🧠</div>
+							<h3 class="feature__title" data-i18n="svc_tracking_title">
+								Tracking & Analytics
+							</h3>
+							<p class="feature__desc" data-i18n="svc_tracking_desc">
+								Pixel + CAPI + GA4 + لوحات متابعة وInsights.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--alt" aria-label="How we work">
+				<div class="container">
+					<div class="section__head">
+						<h2 class="h2" data-i18n="how_title">طريقة الشغل</h2>
+						<p class="lead" data-i18n="how_lead">
+							من أول مكالمة لحد تحسين النتائج — خطوات واضحة.
+						</p>
+					</div>
+
+					<div class="steps">
+						<div class="step">
+							<div class="step__num">1</div>
+							<div class="step__body">
+								<div class="step__title" data-i18n="step1_t">Audit سريع</div>
+								<div class="step__desc" data-i18n="step1_d">
+									نفهم الهدف والمنتج والجمهور ونحدد الفجوات.
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step__num">2</div>
+							<div class="step__body">
+								<div class="step__title" data-i18n="step2_t">
+									Tracking Setup
+								</div>
+								<div class="step__desc" data-i18n="step2_d">
+									Pixel/CAPI/UTM + أحداث التحويل الأساسية.
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step__num">3</div>
+							<div class="step__body">
+								<div class="step__title" data-i18n="step3_t">Creative Plan</div>
+								<div class="step__desc" data-i18n="step3_d">
+									Hooks + زوايا + صيغ إعلانات + خطة اختبار.
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step__num">4</div>
+							<div class="step__body">
+								<div class="step__title" data-i18n="step4_t">Launch</div>
+								<div class="step__desc" data-i18n="step4_d">
+									إطلاق منظّم + توزيع ميزانية + Audience structure.
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step__num">5</div>
+							<div class="step__body">
+								<div class="step__title" data-i18n="step5_t">Optimize</div>
+								<div class="step__desc" data-i18n="step5_d">
+									تحسين أسبوعي: creative/budget/bidding/placements.
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step__num">6</div>
+							<div class="step__body">
+								<div class="step__title" data-i18n="step6_t">
+									Report & Scale
+								</div>
+								<div class="step__desc" data-i18n="step6_d">
+									تقارير واضحة + قرارات توسيع مبنية على بيانات.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="packages" class="section">
+				<div class="container">
+					<div class="section__head">
+						<h2 class="h2" data-i18n="pkg_title">الباقات (Products)</h2>
+						<p class="lead" data-i18n="pkg_lead">
+							اختر باقة حسب مرحلة البيزنس — ونخصص التفاصيل أثناء المكالمة.
+						</p>
+					</div>
+
+					<div class="pricing">
+						<article class="price price--hot">
+							<div class="price__top">
+								<div class="price__name">Starter</div>
+								<div class="price__tag" data-i18n="pkg_starter_tag">للبدايات</div>
+							</div>
+							<ul class="price__list">
+								<li data-i18n="pkg_starter_1">إدارة قناة إعلانية واحدة</li>
+								<li data-i18n="pkg_starter_2">Tracking أساسي (Pixel/UTM)</li>
+								<li data-i18n="pkg_starter_3">
+									2–4 Creatives/أسبوع (حسب توافر المواد)
+								</li>
+								<li data-i18n="pkg_starter_4">تحسين أسبوعي + تقرير شهري</li>
+							</ul>
+							<a class="btn btn--full" href="#contact" data-i18n="pkg_cta"
+								>اطلب تسعير</a
+							>
+						</article>
+
+						<article class="price">
+							<div class="price__top">
+								<div class="price__name">Growth</div>
+								<div class="price__tag" data-i18n="pkg_growth_tag">نمو أسرع</div>
+							</div>
+							<ul class="price__list">
+								<li data-i18n="pkg_growth_1">
+									قناتان إعلانيتان (مثال: Meta + Google)
+								</li>
+								<li data-i18n="pkg_growth_2">Tracking متقدم (CAPI/Events)</li>
+								<li data-i18n="pkg_growth_3">خطة Creative Testing شهرية</li>
+								<li data-i18n="pkg_growth_4">تقارير أسبوعية + Insights</li>
+							</ul>
+							<a
+								class="btn btn--full btn--ghost"
+								href="#contact"
+								data-i18n="pkg_cta"
+								>اطلب تسعير</a
+							>
+						</article>
+
+						<article class="price">
+							<div class="price__top">
+								<div class="price__name">Scale</div>
+								<div class="price__tag" data-i18n="pkg_scale_tag">توسّع</div>
+							</div>
+							<ul class="price__list">
+								<li data-i18n="pkg_scale_1">Multi-channel + Retargeting قوي</li>
+								<li data-i18n="pkg_scale_2">CRO + Landing improvements</li>
+								<li data-i18n="pkg_scale_3">
+									Creative pipeline (أفكار + Scripts + Design)
+								</li>
+								<li data-i18n="pkg_scale_4">Dashboard + مراجعة دورية</li>
+							</ul>
+							<a
+								class="btn btn--full btn--ghost"
+								href="#contact"
+								data-i18n="pkg_cta"
+								>اطلب تسعير</a
+							>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="proof" class="section section--alt">
+				<div class="container">
+					<div class="section__head">
+						<h2 class="h2" data-i18n="proof_title">الإنجازات & مؤشرات الثقة</h2>
+						<p class="lead" data-i18n="proof_lead">
+							ضع أرقامك الحقيقية هنا. حالياً هذه بطاقات جاهزة للتخصيص.
+						</p>
+					</div>
+
+					<div class="stats">
+						<div class="stat">
+							<div class="stat__num" data-stat>—</div>
+							<div class="stat__label" data-i18n="stat_1">حملات مُدارة</div>
+						</div>
+						<div class="stat">
+							<div class="stat__num" data-stat>—</div>
+							<div class="stat__label" data-i18n="stat_2">عملاء نشطين</div>
+						</div>
+						<div class="stat">
+							<div class="stat__num" data-stat>—</div>
+							<div class="stat__label" data-i18n="stat_3">
+								متوسط زمن الاستجابة
+							</div>
+						</div>
+						<div class="stat">
+							<div class="stat__num" data-stat>—</div>
+							<div class="stat__label" data-i18n="stat_4">تقارير / شهر</div>
+						</div>
+					</div>
+
+					<div class="logos" aria-label="Client logos placeholder">
+						<div class="logoCard" data-i18n="logo_placeholder">Brand</div>
+						<div class="logoCard" data-i18n="logo_placeholder">Brand</div>
+						<div class="logoCard" data-i18n="logo_placeholder">Brand</div>
+						<div class="logoCard" data-i18n="logo_placeholder">Brand</div>
+						<div class="logoCard" data-i18n="logo_placeholder">Brand</div>
+						<div class="logoCard" data-i18n="logo_placeholder">Brand</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="reviews" class="section">
+				<div class="container">
+					<div class="section__head">
+						<h2 class="h2" data-i18n="rev_title">آراء العملاء</h2>
+						<p class="lead" data-i18n="rev_lead">
+							أضف شهادات حقيقية من عملائك (الـ placeholders موجودة كمكان فقط).
+						</p>
+					</div>
+
+					<div class="testimonials">
+						<article class="tcard">
+							<p class="tcard__quote" data-i18n="rev_q1">
+								“اكتب هنا رأي العميل + النتيجة التي لاحظها + مدة التعاون.”
+							</p>
+							<div class="tcard__meta">
+								<div class="tcard__name" data-i18n="rev_name">اسم العميل</div>
+								<div class="tcard__role" data-i18n="rev_role">
+									المنصب / النشاط
+								</div>
+							</div>
+						</article>
+						<article class="tcard">
+							<p class="tcard__quote" data-i18n="rev_q2">
+								“اكتب هنا مثال: تحسن جودة الليدز + انخفضت التكلفة + التقرير واضح.”
+							</p>
+							<div class="tcard__meta">
+								<div class="tcard__name" data-i18n="rev_name">اسم العميل</div>
+								<div class="tcard__role" data-i18n="rev_role">
+									المنصب / النشاط
+								</div>
+							</div>
+						</article>
+						<article class="tcard">
+							<p class="tcard__quote" data-i18n="rev_q3">
+								“اكتب هنا: التجارب كانت منظمة، والـ creatives كانت قوية ومتجددة.”
+							</p>
+							<div class="tcard__meta">
+								<div class="tcard__name" data-i18n="rev_name">اسم العميل</div>
+								<div class="tcard__role" data-i18n="rev_role">
+									المنصب / النشاط
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--alt">
+				<div class="container">
+					<div class="section__head">
+						<h2 class="h2" data-i18n="faq_title">أسئلة شائعة</h2>
+						<p class="lead" data-i18n="faq_lead">
+							إجابات مختصرة لأهم الأسئلة قبل التعاقد.
+						</p>
+					</div>
+
+					<div class="faq" data-faq>
+						<div class="qa">
+							<button class="qa__q" type="button" data-qa data-i18n="faq_q1">
+								هل الحسابات والإعلانات ملكي؟
+							</button>
+							<div class="qa__a" data-i18n="faq_a1">
+								نعم. أنت مالك الـ Ad Account والـ Pages والـ Pixels. نحن نشتغل
+								بصلاحيات.
+							</div>
+						</div>
+						<div class="qa">
+							<button class="qa__q" type="button" data-qa data-i18n="faq_q2">
+								هل يوجد عقد/مدة إلزامية؟
+							</button>
+							<div class="qa__a" data-i18n="faq_a2">
+								نحدد ذلك حسب الباقة والهدف. نفضّل اتفاق واضح + مؤشرات أداء +
+								مراجعة شهرية.
+							</div>
+						</div>
+						<div class="qa">
+							<button class="qa__q" type="button" data-qa data-i18n="faq_q3">
+								هل توفرون محتوى وتصميم؟
+							</button>
+							<div class="qa__a" data-i18n="faq_a3">
+								نعم حسب الباقة: خطة محتوى + تصميمات + Scripts + تحسينات على
+								creatives بناءً على النتائج.
+							</div>
+						</div>
+						<div class="qa">
+							<button class="qa__q" type="button" data-qa data-i18n="faq_q4">
+								كيف تكون التقارير؟
+							</button>
+							<div class="qa__a" data-i18n="faq_a4">
+								Dashboard + تقرير دوري: النتائج، ما تم اختباره، ما نجح، وما هي
+								الخطوة القادمة.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact">
+				<div class="container">
+					<div class="contact__grid">
+						<div class="contact__info">
+							<h2 class="h2" data-i18n="contact_title">تواصل معنا</h2>
+							<p class="lead" data-i18n="contact_lead">
+								أرسل هدفك وميزانيتك التقريبية — وسنرجع لك بخطة واضحة.
+							</p>
+
+							<div class="contact__cards">
+								<a class="citem" href="mailto:almarketerah@garsony.xyz">
+									<div class="citem__k" data-i18n="contact_email_k">Email</div>
+									<div class="citem__v">almarketerah@garsony.xyz</div>
+								</a>
+								<a
+									class="citem"
+									href="https://www.facebook.com/AlMarkterah/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<div class="citem__k" data-i18n="contact_fb_k">Facebook</div>
+									<div class="citem__v">AlMarkterah</div>
+								</a>
+								<div class="citem" data-phone-wrap hidden>
+									<div class="citem__k" data-i18n="contact_phone_k">Phone</div>
+									<div class="citem__v"><a data-phone-link class="link" href="#"></a></div>
+								</div>
+							</div>
+
+							<div class="contact__note" data-i18n="contact_note">
+								لن نطلب منك كلمة سر — نستخدم صلاحيات Business Manager فقط.
+							</div>
+						</div>
+
+						<form class="form" data-contact-form>
+							<div class="form__row">
+								<label class="field">
+									<span class="field__label" data-i18n="form_name">الاسم</span>
+									<input class="field__input" name="name" required />
+								</label>
+								<label class="field">
+									<span class="field__label" data-i18n="form_phone"
+										>رقم الهاتف (اختياري)</span
+									>
+									<input class="field__input" name="phone" inputmode="tel" />
+								</label>
+							</div>
+							<label class="field">
+								<span class="field__label" data-i18n="form_email"
+									>البريد الإلكتروني</span
+								>
+								<input class="field__input" name="email" type="email" required />
+							</label>
+							<label class="field">
+								<span class="field__label" data-i18n="form_service"
+									>الخدمة المطلوبة</span
+								>
+								<select class="field__input" name="service">
+									<option data-i18n="opt_meta">Meta Ads (Facebook/Instagram)</option>
+									<option data-i18n="opt_google">Google Ads</option>
+									<option data-i18n="opt_tiktok">TikTok/Snap Ads</option>
+									<option data-i18n="opt_pages">Page Management</option>
+									<option data-i18n="opt_creative">Creative & Content</option>
+									<option data-i18n="opt_lp">Landing Page / CRO</option>
+									<option data-i18n="opt_tracking">Tracking / Analytics</option>
+								</select>
+							</label>
+							<label class="field">
+								<span class="field__label" data-i18n="form_message">رسالة</span>
+								<textarea
+									class="field__input field__input--area"
+									name="message"
+									required
+									data-i18n-placeholder="form_placeholder"
+									placeholder="اكتب الهدف + المنتج/الخدمة + البلد + ميزانية تقريبية + رابط الموقع (إن وجد)…"
+								></textarea>
+							</label>
+							<button class="btn btn--lg btn--full" type="submit" data-i18n="form_submit">
+								إرسال
+							</button>
+							<p class="form__hint">
+								<span data-i18n="form_hint"
+									>سيتم فتح رسالة بريد جاهزة للإرسال إلى</span
+								>
+								<span class="mono">almarketerah@garsony.xyz</span>.
+							</p>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__inner">
+				<div class="footer__left">
+					<img class="footer__logo" src="./assets/logo.svg" alt="" />
+					<div>
+						<div class="footer__name">Marketera</div>
+						<div class="footer__sub" data-i18n="footer_sub">
+							Performance Marketing & Creative
+						</div>
+					</div>
+				</div>
+				<div class="footer__right">
+					<a class="link" href="mailto:almarketerah@garsony.xyz">Email</a>
+					<a
+						class="link"
+						href="https://www.facebook.com/AlMarkterah/"
+						target="_blank"
+						rel="noreferrer"
+						>Facebook</a
+					>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			window.MARKETERA = {
+				email: 'almarketerah@garsony.xyz',
+				facebookUrl: 'https://www.facebook.com/AlMarkterah/',
+				phoneDisplay: '',
+				phoneTel: ''
+			};
+		</script>
+		<script src="./js/main.js" defer></script>
+	</body>
+</html>
