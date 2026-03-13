@@ -1,885 +1,819 @@
-﻿		<main id="top">
-			<section class="hero" aria-label="Hero">
-				<div class="container hero__grid">
-					<div class="hero__copy">
-						<div class="pill">
-							<span class="pill__dot" aria-hidden="true"></span>
-							<span data-i18n="hero_pill">Restaurants • Homes • Products</span>
-						</div>
-
-						<h1 data-i18n="hero_title">
-							Fast, safe pest control for restaurants and homes.
-						</h1>
-						<p class="lead" data-i18n="hero_lead">
-							Subscription coverage for restaurants, on-demand home visits, plus
-							in-house products for insects and rodents.
-						</p>
-
-						<ul class="checks">
-							<li data-i18n="hero_check_1">
-								Scheduled follow-ups and prevention
-							</li>
-							<li data-i18n="hero_check_2">
-								Restaurant-friendly recurring plans
-							</li>
-							<li data-i18n="hero_check_3">
-								Safer options for sensitive areas
-							</li>
-						</ul>
-
-						<div class="hero__actions">
-							<a class="btn btn--primary" href="#contact" data-i18n="cta_quote"
-								>Get a quote</a
-							>
-							<a
-								class="btn btn--ghost"
-								href="#products"
-								data-i18n="cta_products"
-								>View products</a
-							>
-						</div>
-
-						<div class="hero__meta" aria-label="Service highlights">
-							<div class="meta-card">
-								<div class="meta-card__title" data-i18n="meta_commercial_title">
-									Commercial
-								</div>
-								<div class="meta-card__text" data-i18n="meta_commercial_text">
-									Subscription plans for restaurants
-								</div>
-							</div>
-							<div class="meta-card">
-								<div class="meta-card__title" data-i18n="meta_res_title">
-									Residential
-								</div>
-								<div class="meta-card__text" data-i18n="meta_res_text">
-									Home visits + prevention advice
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<aside class="card hero__card" aria-label="Quote form">
-						<h2 class="h3" data-i18n="form_title">Request a quote</h2>
-						<p class="muted" data-i18n="form_subtitle">
-							We reply by email (or call if you prefer).
-						</p>
-
-						<form id="quoteForm" class="form">
-							<label class="label">
-								<span data-i18n="field_name">Name</span>
-								<input
-									name="name"
-									required
-									data-i18n-attr="placeholder:ph_name"
-									placeholder="Your name"
-								/>
-							</label>
-							<label class="label">
-								<span data-i18n="field_email">Email</span>
-								<input
-									name="email"
-									type="email"
-									required
-									data-i18n-attr="placeholder:ph_email"
-									placeholder="you@company.com"
-								/>
-							</label>
-							<label class="label">
-								<span data-i18n="field_phone">Phone (optional)</span>
-								<input
-									name="phone"
-									type="tel"
-									data-i18n-attr="placeholder:ph_phone"
-									placeholder="+201226766076"
-								/>
-							</label>
-							<label class="label">
-								<span data-i18n="field_interest">Interested in</span>
-								<select name="interest" required>
-									<option value="restaurant" data-i18n="opt_restaurant">
-										Restaurant subscription
-									</option>
-									<option value="home" data-i18n="opt_home">Home visit</option>
-									<option value="product" data-i18n="opt_product">
-										Products
-									</option>
-								</select>
-							</label>
-							<label class="label">
-								<span data-i18n="field_message">Message</span>
-								<textarea
-									name="message"
-									rows="4"
-									required
-									data-i18n-attr="placeholder:ph_message"
-									placeholder="Tell us the issue (roaches, rodents, etc), location, and preferred time."
-								></textarea>
-							</label>
-
-							<button
-								class="btn btn--primary btn--full"
-								type="submit"
-								data-i18n="cta_send"
-							>
-								Send
-							</button>
-							<p
-								id="formStatus"
-								class="tiny muted"
-								role="status"
-								aria-live="polite"
-							></p>
-						</form>
-					</aside>
+﻿<main id="top">
+	<section class="hero" aria-label="Hero">
+		<div class="container hero__grid">
+			<div class="hero__copy">
+				<div class="pill">
+					<span class="pill__dot" aria-hidden="true"></span>
+					<span data-i18n="hero_pill">Restaurants • Homes • Products</span>
 				</div>
-			</section>
 
-			<section class="trust" aria-label="What we cover">
-				<div class="container trust__grid">
-					<div class="trust-item">
-						<span class="badge" data-i18n="trust_badge_roaches">Roaches</span
-						><span data-i18n="trust_insects">Insect control</span>
+				<h1 data-i18n="hero_title">
+					Fast, safe pest control for restaurants and homes.
+				</h1>
+				<p class="lead" data-i18n="hero_lead">
+					Subscription coverage for restaurants, on-demand home visits, plus
+					in-house products for insects and rodents.
+				</p>
+
+				<ul class="checks">
+					<li data-i18n="hero_check_1">Scheduled follow-ups and prevention</li>
+					<li data-i18n="hero_check_2">Restaurant-friendly recurring plans</li>
+					<li data-i18n="hero_check_3">Safer options for sensitive areas</li>
+				</ul>
+
+				<div class="hero__actions">
+					<a class="btn btn--primary" href="#contact" data-i18n="cta_quote"
+						>Get a quote</a
+					>
+					<a class="btn btn--ghost" href="#products" data-i18n="cta_products"
+						>View products</a
+					>
+				</div>
+
+				<div class="hero__meta" aria-label="Service highlights">
+					<div class="meta-card">
+						<div class="meta-card__title" data-i18n="meta_commercial_title">
+							Commercial
+						</div>
+						<div class="meta-card__text" data-i18n="meta_commercial_text">
+							Subscription plans for restaurants
+						</div>
 					</div>
-					<div class="trust-item">
-						<span class="badge" data-i18n="trust_badge_rodents">Rodents</span
-						><span data-i18n="trust_rodents">Catch &amp; prevent</span>
-					</div>
-					<div class="trust-item">
-						<span class="badge" data-i18n="trust_badge_restaurants"
-							>Restaurants</span
-						><span data-i18n="trust_recurring">Recurring coverage</span>
-					</div>
-					<div class="trust-item">
-						<span class="badge" data-i18n="trust_badge_homes">Homes</span
-						><span data-i18n="trust_ondemand">On-demand visits</span>
+					<div class="meta-card">
+						<div class="meta-card__title" data-i18n="meta_res_title">
+							Residential
+						</div>
+						<div class="meta-card__text" data-i18n="meta_res_text">
+							Home visits + prevention advice
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<section id="services" class="section">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="services_eyebrow">Services</div>
-						<h2 data-i18n="services_title">Built for restaurants and homes</h2>
-						<p class="muted" data-i18n="services_text">
-							Choose a subscription plan for ongoing protection (best for
-							restaurants), or book a home visit for a fast inspection and
-							treatment.
-						</p>
-					</div>
+			<aside class="card hero__card" aria-label="Quote form">
+				<h2 class="h3" data-i18n="form_title">Request a quote</h2>
+				<p class="muted" data-i18n="form_subtitle">
+					We reply by email (or call if you prefer).
+				</p>
 
-					<div class="grid grid--2">
-						<div class="card">
-							<h3 data-i18n="svc_rest_title">Restaurant subscription</h3>
-							<p class="muted" data-i18n="svc_rest_sub">
-								Recurring visits + prevention
+				<form id="quoteForm" class="form">
+					<label class="label">
+						<span data-i18n="field_name">Name</span>
+						<input
+							name="name"
+							required
+							data-i18n-attr="placeholder:ph_name"
+							placeholder="Your name"
+						/>
+					</label>
+					<label class="label">
+						<span data-i18n="field_email">Email</span>
+						<input
+							name="email"
+							type="email"
+							required
+							data-i18n-attr="placeholder:ph_email"
+							placeholder="you@company.com"
+						/>
+					</label>
+					<label class="label">
+						<span data-i18n="field_phone">Phone (optional)</span>
+						<input
+							name="phone"
+							type="tel"
+							data-i18n-attr="placeholder:ph_phone"
+							placeholder="+201226766076"
+						/>
+					</label>
+					<label class="label">
+						<span data-i18n="field_interest">Interested in</span>
+						<select name="interest" required>
+							<option value="restaurant" data-i18n="opt_restaurant">
+								Restaurant subscription
+							</option>
+							<option value="home" data-i18n="opt_home">Home visit</option>
+							<option value="product" data-i18n="opt_product">Products</option>
+						</select>
+					</label>
+					<label class="label">
+						<span data-i18n="field_message">Message</span>
+						<textarea
+							name="message"
+							rows="4"
+							required
+							data-i18n-attr="placeholder:ph_message"
+							placeholder="Tell us the issue (roaches, rodents, etc), location, and preferred time."
+						></textarea>
+					</label>
+
+					<button
+						class="btn btn--primary btn--full"
+						type="submit"
+						data-i18n="cta_send"
+					>
+						Send
+					</button>
+					<p
+						id="formStatus"
+						class="tiny muted"
+						role="status"
+						aria-live="polite"
+					></p>
+				</form>
+			</aside>
+		</div>
+	</section>
+
+	<section class="trust" aria-label="What we cover">
+		<div class="container trust__grid">
+			<div class="trust-item">
+				<span class="badge" data-i18n="trust_badge_roaches">Roaches</span
+				><span data-i18n="trust_insects">Insect control</span>
+			</div>
+			<div class="trust-item">
+				<span class="badge" data-i18n="trust_badge_rodents">Rodents</span
+				><span data-i18n="trust_rodents">Catch &amp; prevent</span>
+			</div>
+			<div class="trust-item">
+				<span class="badge" data-i18n="trust_badge_restaurants"
+					>Restaurants</span
+				><span data-i18n="trust_recurring">Recurring coverage</span>
+			</div>
+			<div class="trust-item">
+				<span class="badge" data-i18n="trust_badge_homes">Homes</span
+				><span data-i18n="trust_ondemand">On-demand visits</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="services" class="section">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="services_eyebrow">Services</div>
+				<h2 data-i18n="services_title">Built for restaurants and homes</h2>
+				<p class="muted" data-i18n="services_text">
+					Choose a subscription plan for ongoing protection (best for
+					restaurants), or book a home visit for a fast inspection and
+					treatment.
+				</p>
+			</div>
+
+			<div class="grid grid--2">
+				<div class="card">
+					<h3 data-i18n="svc_rest_title">Restaurant subscription</h3>
+					<p class="muted" data-i18n="svc_rest_sub">
+						Recurring visits + prevention
+					</p>
+					<ul class="bullets">
+						<li data-i18n="svc_rest_b1">Scheduled service visits</li>
+						<li data-i18n="svc_rest_b2">
+							Targeted treatments for kitchens &amp; storage
+						</li>
+						<li data-i18n="svc_rest_b3">Documentation-ready service notes</li>
+						<li data-i18n="svc_rest_b4">Emergency callouts available</li>
+					</ul>
+					<a class="btn btn--ghost" href="#contact" data-i18n="svc_rest_cta"
+						>Get restaurant pricing</a
+					>
+				</div>
+
+				<div class="card">
+					<h3 data-i18n="svc_home_title">Home visits</h3>
+					<p class="muted" data-i18n="svc_home_sub">
+						Inspection + treatment + advice
+					</p>
+					<ul class="bullets">
+						<li data-i18n="svc_home_b1">Roaches, ants, flies, and more</li>
+						<li data-i18n="svc_home_b2">Rodent inspection and placement</li>
+						<li data-i18n="svc_home_b3">Entry-point sealing suggestions</li>
+						<li data-i18n="svc_home_b4">Follow-up options</li>
+					</ul>
+					<a class="btn btn--ghost" href="#contact" data-i18n="svc_home_cta"
+						>Book a home visit</a
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="products" class="section section--alt">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="products_eyebrow">Products</div>
+				<h2 data-i18n="products_title">Two products, developed in-house</h2>
+				<p class="muted" data-i18n="products_text">
+					Use our products directly, or have our team manage them as part of
+					your plan.
+				</p>
+			</div>
+
+			<div class="grid grid--2">
+				<div class="card">
+					<div class="product-top">
+						<img
+							class="product-img"
+							src="./assets/product-insect.svg"
+							alt=""
+							width="72"
+							height="72"
+							loading="lazy"
+						/>
+						<div>
+							<h3 data-i18n="prod_insect_title">Insect control solution</h3>
+							<p class="muted" data-i18n="prod_insect_sub">
+								For roaches and common insects
 							</p>
-							<ul class="bullets">
-								<li data-i18n="svc_rest_b1">Scheduled service visits</li>
-								<li data-i18n="svc_rest_b2">
-									Targeted treatments for kitchens &amp; storage
-								</li>
-								<li data-i18n="svc_rest_b3">
-									Documentation-ready service notes
-								</li>
-								<li data-i18n="svc_rest_b4">Emergency callouts available</li>
-							</ul>
-							<a class="btn btn--ghost" href="#contact" data-i18n="svc_rest_cta"
-								>Get restaurant pricing</a
-							>
 						</div>
+					</div>
+					<ul class="bullets">
+						<li data-i18n="prod_insect_b1">Designed for fast knockdown</li>
+						<li data-i18n="prod_insect_b2">Works well in high-risk areas</li>
+						<li data-i18n="prod_insect_b3">
+							Available for service use or purchase
+						</li>
+					</ul>
+					<a
+						class="btn btn--ghost"
+						href="#contact"
+						data-i18n="cta_request_details"
+						>Request details</a
+					>
+				</div>
 
-						<div class="card">
-							<h3 data-i18n="svc_home_title">Home visits</h3>
-							<p class="muted" data-i18n="svc_home_sub">
-								Inspection + treatment + advice
+				<div class="card">
+					<div class="product-top">
+						<img
+							class="product-img"
+							src="./assets/product-rodent.svg"
+							alt=""
+							width="72"
+							height="72"
+							loading="lazy"
+						/>
+						<div>
+							<h3 data-i18n="prod_rodent_title">Rodent catch system</h3>
+							<p class="muted" data-i18n="prod_rodent_sub">
+								Reliable capture + placement guidance
 							</p>
-							<ul class="bullets">
-								<li data-i18n="svc_home_b1">Roaches, ants, flies, and more</li>
-								<li data-i18n="svc_home_b2">Rodent inspection and placement</li>
-								<li data-i18n="svc_home_b3">Entry-point sealing suggestions</li>
-								<li data-i18n="svc_home_b4">Follow-up options</li>
-							</ul>
-							<a class="btn btn--ghost" href="#contact" data-i18n="svc_home_cta"
-								>Book a home visit</a
-							>
+						</div>
+					</div>
+					<ul class="bullets">
+						<li data-i18n="prod_rodent_b1">Durable and easy to deploy</li>
+						<li data-i18n="prod_rodent_b2">
+							Supports preventative placement strategy
+						</li>
+						<li data-i18n="prod_rodent_b3">Ideal for restaurants and homes</li>
+					</ul>
+					<a
+						class="btn btn--ghost"
+						href="#contact"
+						data-i18n="cta_request_details"
+						>Request details</a
+					>
+				</div>
+			</div>
+
+			<div class="section-head" style="margin-top: 26px">
+				<h3 class="h3" data-i18n="products_gallery_title">Product gallery</h3>
+				<p class="muted" data-i18n="products_gallery_text">
+					Replace these with real photos of your products.
+				</p>
+			</div>
+			<div class="carousel" data-carousel>
+				<button
+					class="carousel__btn"
+					type="button"
+					data-carousel-prev
+					aria-label="Previous"
+				>
+					‹
+				</button>
+				<div class="carousel__track" data-carousel-track>
+					<img
+						src="./assets/product-1.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+					<img
+						src="./assets/product-2.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+					<img
+						src="./assets/product-3.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+				</div>
+				<button
+					class="carousel__btn"
+					type="button"
+					data-carousel-next
+					aria-label="Next"
+				>
+					›
+				</button>
+			</div>
+
+			<div class="center">
+				<a class="btn btn--primary" href="#contact" data-i18n="cta_ask_products"
+					>Ask about products</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="section" aria-label="Our work">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="work_eyebrow">Our work</div>
+				<h2 data-i18n="work_title">Recent work (examples)</h2>
+				<p class="muted" data-i18n="work_text">
+					Show real photos here: kitchen monitoring, sealing entry points,
+					placements, and follow-up visits.
+				</p>
+			</div>
+
+			<div class="carousel" data-carousel>
+				<button
+					class="carousel__btn"
+					type="button"
+					data-carousel-prev
+					aria-label="Previous"
+				>
+					‹
+				</button>
+				<div class="carousel__track" data-carousel-track>
+					<img
+						src="./assets/work-1.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+					<img
+						src="./assets/work-2.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+					<img
+						src="./assets/work-3.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+					<img
+						src="./assets/work-4.svg"
+						alt=""
+						width="960"
+						height="540"
+						loading="lazy"
+					/>
+				</div>
+				<button
+					class="carousel__btn"
+					type="button"
+					data-carousel-next
+					aria-label="Next"
+				>
+					›
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="process_eyebrow">Process</div>
+				<h2 data-i18n="process_title">Simple, repeatable, effective</h2>
+				<p class="muted" data-i18n="process_text">
+					A clear plan beats random spraying. We inspect, treat the root causes,
+					then maintain.
+				</p>
+			</div>
+
+			<div class="grid grid--3">
+				<div class="step">
+					<div class="step__n">1</div>
+					<div>
+						<div class="step__title" data-i18n="step_1_title">Inspect</div>
+						<div class="muted" data-i18n="step_1_text">
+							Identify pest type, hotspots, and entry points.
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<section id="products" class="section section--alt">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="products_eyebrow">Products</div>
-						<h2 data-i18n="products_title">Two products, developed in-house</h2>
-						<p class="muted" data-i18n="products_text">
-							Use our products directly, or have our team manage them as part of
-							your plan.
-						</p>
-					</div>
-
-					<div class="grid grid--2">
-						<div class="card">
-							<div class="product-top">
-								<img
-									class="product-img"
-									src="./assets/product-insect.svg"
-									alt=""
-									width="72"
-									height="72"
-									loading="lazy"
-								/>
-								<div>
-									<h3 data-i18n="prod_insect_title">Insect control solution</h3>
-									<p class="muted" data-i18n="prod_insect_sub">
-										For roaches and common insects
-									</p>
-								</div>
-							</div>
-							<ul class="bullets">
-								<li data-i18n="prod_insect_b1">Designed for fast knockdown</li>
-								<li data-i18n="prod_insect_b2">
-									Works well in high-risk areas
-								</li>
-								<li data-i18n="prod_insect_b3">
-									Available for service use or purchase
-								</li>
-							</ul>
-							<a
-								class="btn btn--ghost"
-								href="#contact"
-								data-i18n="cta_request_details"
-								>Request details</a
-							>
-						</div>
-
-						<div class="card">
-							<div class="product-top">
-								<img
-									class="product-img"
-									src="./assets/product-rodent.svg"
-									alt=""
-									width="72"
-									height="72"
-									loading="lazy"
-								/>
-								<div>
-									<h3 data-i18n="prod_rodent_title">Rodent catch system</h3>
-									<p class="muted" data-i18n="prod_rodent_sub">
-										Reliable capture + placement guidance
-									</p>
-								</div>
-							</div>
-							<ul class="bullets">
-								<li data-i18n="prod_rodent_b1">Durable and easy to deploy</li>
-								<li data-i18n="prod_rodent_b2">
-									Supports preventative placement strategy
-								</li>
-								<li data-i18n="prod_rodent_b3">
-									Ideal for restaurants and homes
-								</li>
-							</ul>
-							<a
-								class="btn btn--ghost"
-								href="#contact"
-								data-i18n="cta_request_details"
-								>Request details</a
-							>
+				<div class="step">
+					<div class="step__n">2</div>
+					<div>
+						<div class="step__title" data-i18n="step_2_title">Treat</div>
+						<div class="muted" data-i18n="step_2_text">
+							Targeted treatment for the affected zones with safety in mind.
 						</div>
 					</div>
-
-					<div class="section-head" style="margin-top: 26px">
-						<h3 class="h3" data-i18n="products_gallery_title">
-							Product gallery
-						</h3>
-						<p class="muted" data-i18n="products_gallery_text">
-							Replace these with real photos of your products.
-						</p>
+				</div>
+				<div class="step">
+					<div class="step__n">3</div>
+					<div>
+						<div class="step__title" data-i18n="step_3_title">Maintain</div>
+						<div class="muted" data-i18n="step_3_text">
+							Follow-ups for subscriptions, plus prevention guidance.
+						</div>
 					</div>
-					<div class="carousel" data-carousel>
-						<button
-							class="carousel__btn"
-							type="button"
-							data-carousel-prev
-							aria-label="Previous"
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="plans" class="section">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="plans_eyebrow">Plans</div>
+				<h2 data-i18n="plans_title">
+					Subscription coverage or one-time visits
+				</h2>
+				<p class="muted" data-i18n="plans_text">
+					Use these as a starting point. Final pricing can be tailored after a
+					quick inspection.
+				</p>
+			</div>
+
+			<div class="grid grid--3">
+				<div class="card">
+					<div class="plan-top">
+						<div class="plan-top__title" data-i18n="plan_1_title">
+							Restaurant Basic
+						</div>
+						<div class="plan-top__price" data-i18n="plan_1_price">Monthly</div>
+					</div>
+					<p class="muted" data-i18n="plan_1_sub">
+						Recurring coverage for small kitchens
+					</p>
+					<ul class="bullets">
+						<li data-i18n="plan_1_b1">Scheduled visits</li>
+						<li data-i18n="plan_1_b2">Monitoring + prevention</li>
+						<li data-i18n="plan_1_b3">Email support</li>
+					</ul>
+					<a
+						class="btn btn--ghost btn--full"
+						href="#contact"
+						data-i18n="cta_choose"
+						>Choose</a
+					>
+				</div>
+
+				<div class="card card--highlight">
+					<div class="plan-top">
+						<div class="plan-top__title" data-i18n="plan_2_title">
+							Restaurant Pro
+						</div>
+						<div class="plan-top__price" data-i18n="plan_2_price">Monthly</div>
+					</div>
+					<p class="muted" data-i18n="plan_2_sub">Best for busy restaurants</p>
+					<ul class="bullets">
+						<li data-i18n="plan_2_b1">More frequent visits</li>
+						<li data-i18n="plan_2_b2">Priority response</li>
+						<li data-i18n="plan_2_b3">Detailed service notes</li>
+					</ul>
+					<a
+						class="btn btn--primary btn--full"
+						href="#contact"
+						data-i18n="cta_choose"
+						>Choose</a
+					>
+				</div>
+
+				<div class="card">
+					<div class="plan-top">
+						<div class="plan-top__title" data-i18n="plan_3_title">
+							Home Visit
+						</div>
+						<div class="plan-top__price" data-i18n="plan_3_price">One-time</div>
+					</div>
+					<p class="muted" data-i18n="plan_3_sub">Inspection + treatment</p>
+					<ul class="bullets">
+						<li data-i18n="plan_3_b1">Fast booking</li>
+						<li data-i18n="plan_3_b2">Treatment + advice</li>
+						<li data-i18n="plan_3_b3">Optional follow-up</li>
+					</ul>
+					<a
+						class="btn btn--ghost btn--full"
+						href="#contact"
+						data-i18n="cta_choose"
+						>Choose</a
+					>
+				</div>
+			</div>
+
+			<div class="center">
+				<a
+					class="btn btn--primary"
+					href="#contact"
+					data-i18n="cta_exact_pricing"
+					>Get exact pricing</a
+				>
+				<p class="tiny muted" data-i18n="plans_note">
+					Replace plan text/prices with your real offers.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="section section--alt">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="faq_eyebrow">FAQ</div>
+				<h2 data-i18n="faq_title">Common questions</h2>
+				<p class="muted" data-i18n="faq_text">
+					Quick answers. Ask anything else in the contact form.
+				</p>
+			</div>
+
+			<div class="faq">
+				<details>
+					<summary data-i18n="faq_q1">
+						Do you offer subscription service for restaurants?
+					</summary>
+					<div class="muted">
+						<span data-i18n="faq_a1"
+							>Yes. Restaurant service is designed as recurring visits with
+							prevention and follow-ups.</span
 						>
-							‹
-						</button>
-						<div class="carousel__track" data-carousel-track>
-							<img
-								src="./assets/product-1.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
-							<img
-								src="./assets/product-2.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
-							<img
-								src="./assets/product-3.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
-						</div>
-						<button
-							class="carousel__btn"
-							type="button"
-							data-carousel-next
-							aria-label="Next"
-						>
-							›
-						</button>
 					</div>
+				</details>
+				<details>
+					<summary data-i18n="faq_q2">
+						Can I buy your products without a service plan?
+					</summary>
+					<div class="muted">
+						<span data-i18n="faq_a2"
+							>Yes. Request product details and availability through the contact
+							form.</span
+						>
+					</div>
+				</details>
+				<details>
+					<summary data-i18n="faq_q3">
+						Do you handle roaches and rodents?
+					</summary>
+					<div class="muted">
+						<span data-i18n="faq_a3"
+							>Yes. We cover common insects (including roaches) and rodent
+							catch/prevention.</span
+						>
+					</div>
+				</details>
+				<details>
+					<summary data-i18n="faq_q4">How fast can you visit?</summary>
+					<div class="muted">
+						<span data-i18n="faq_a4"
+							>Depends on area and workload. Submit a request and we’ll confirm
+							the earliest slot.</span
+						>
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>
 
-					<div class="center">
+	<section id="contact" class="section">
+		<div class="container">
+			<div class="section-head">
+				<div class="eyebrow" data-i18n="contact_eyebrow">Contact</div>
+				<h2 data-i18n="contact_title">Get a quote</h2>
+				<p class="muted" data-i18n="contact_text">
+					Send your request. We reply by email (and can call if you leave a
+					phone number).
+				</p>
+			</div>
+
+			<div class="contact">
+				<div class="card">
+					<form id="contactForm" class="form">
+						<label class="label">
+							<span data-i18n="field_name">Name</span>
+							<input
+								name="name"
+								required
+								data-i18n-attr="placeholder:ph_name"
+								placeholder="Your name"
+							/>
+						</label>
+						<label class="label">
+							<span data-i18n="field_email">Email</span>
+							<input
+								name="email"
+								type="email"
+								required
+								data-i18n-attr="placeholder:ph_email"
+								placeholder="you@company.com"
+							/>
+						</label>
+						<label class="label">
+							<span data-i18n="field_phone">Phone (optional)</span>
+							<input
+								name="phone"
+								type="tel"
+								data-i18n-attr="placeholder:ph_phone"
+								placeholder="+201226766076"
+							/>
+						</label>
+						<label class="label">
+							<span data-i18n="field_interest">Interested in</span>
+							<select name="interest" required>
+								<option value="restaurant" data-i18n="opt_restaurant">
+									Restaurant subscription
+								</option>
+								<option value="home" data-i18n="opt_home">Home visit</option>
+								<option value="product" data-i18n="opt_product">
+									Products
+								</option>
+							</select>
+						</label>
+						<label class="label">
+							<span data-i18n="field_message">Message</span>
+							<textarea
+								name="message"
+								rows="6"
+								required
+								data-i18n-attr="placeholder:ph_message"
+								placeholder="Tell us the issue (roaches, rodents, etc), location, and preferred time."
+							></textarea>
+						</label>
+						<button
+							class="btn btn--primary btn--full"
+							type="submit"
+							data-i18n="cta_send"
+						>
+							Send
+						</button>
+						<p class="tiny muted">
+							<span data-i18n="contact_note"
+								>If no form endpoint is configured, this will open your email
+								client.</span
+							>
+						</p>
+						<p
+							id="contactStatus"
+							class="tiny muted"
+							role="status"
+							aria-live="polite"
+						></p>
+					</form>
+				</div>
+
+				<aside class="contact__side">
+					<div class="side-card">
+						<div class="side-card__titleRow">
+							<svg class="sideTitleIcon" viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									fill="currentColor"
+									d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"
+								/>
+							</svg>
+							<div class="side-card__title" data-i18n="side_email">Email</div>
+						</div>
 						<a
-							class="btn btn--primary"
-							href="#contact"
-							data-i18n="cta_ask_products"
-							>Ask about products</a
+							class="side-card__linkRow"
+							data-bind-attr="href:companyMailtoHref"
+							href="mailto:sharqawy@garsony.xyz"
+							data-bind-text="companyEmail"
 						>
+							<svg class="sideIcon" viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									fill="currentColor"
+									d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"
+								/>
+							</svg>
+							sharqawy@garsony.xyz
+						</a>
 					</div>
-				</div>
-			</section>
-
-			<section id="work" class="section" aria-label="Our work">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="work_eyebrow">Our work</div>
-						<h2 data-i18n="work_title">Recent work (examples)</h2>
-						<p class="muted" data-i18n="work_text">
-							Show real photos here: kitchen monitoring, sealing entry points,
-							placements, and follow-up visits.
-						</p>
-					</div>
-
-					<div class="carousel" data-carousel>
-						<button
-							class="carousel__btn"
-							type="button"
-							data-carousel-prev
-							aria-label="Previous"
-						>
-							‹
-						</button>
-						<div class="carousel__track" data-carousel-track>
-							<img
-								src="./assets/work-1.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
-							<img
-								src="./assets/work-2.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
-							<img
-								src="./assets/work-3.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
-							<img
-								src="./assets/work-4.svg"
-								alt=""
-								width="960"
-								height="540"
-								loading="lazy"
-							/>
+					<div class="side-card">
+						<div class="side-card__titleRow">
+							<svg class="sideTitleIcon" viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									fill="currentColor"
+									d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"
+								/>
+							</svg>
+							<div class="side-card__title" data-i18n="side_phone">Phone</div>
 						</div>
-						<button
-							class="carousel__btn"
-							type="button"
-							data-carousel-next
-							aria-label="Next"
-						>
-							›
-						</button>
-					</div>
-				</div>
-			</section>
-
-			<section class="section">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="process_eyebrow">Process</div>
-						<h2 data-i18n="process_title">Simple, repeatable, effective</h2>
-						<p class="muted" data-i18n="process_text">
-							A clear plan beats random spraying. We inspect, treat the root
-							causes, then maintain.
-						</p>
-					</div>
-
-					<div class="grid grid--3">
-						<div class="step">
-							<div class="step__n">1</div>
-							<div>
-								<div class="step__title" data-i18n="step_1_title">Inspect</div>
-								<div class="muted" data-i18n="step_1_text">
-									Identify pest type, hotspots, and entry points.
-								</div>
-							</div>
-						</div>
-						<div class="step">
-							<div class="step__n">2</div>
-							<div>
-								<div class="step__title" data-i18n="step_2_title">Treat</div>
-								<div class="muted" data-i18n="step_2_text">
-									Targeted treatment for the affected zones with safety in mind.
-								</div>
-							</div>
-						</div>
-						<div class="step">
-							<div class="step__n">3</div>
-							<div>
-								<div class="step__title" data-i18n="step_3_title">Maintain</div>
-								<div class="muted" data-i18n="step_3_text">
-									Follow-ups for subscriptions, plus prevention guidance.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="plans" class="section">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="plans_eyebrow">Plans</div>
-						<h2 data-i18n="plans_title">
-							Subscription coverage or one-time visits
-						</h2>
-						<p class="muted" data-i18n="plans_text">
-							Use these as a starting point. Final pricing can be tailored after
-							a quick inspection.
-						</p>
-					</div>
-
-					<div class="grid grid--3">
-						<div class="card">
-							<div class="plan-top">
-								<div class="plan-top__title" data-i18n="plan_1_title">
-									Restaurant Basic
-								</div>
-								<div class="plan-top__price" data-i18n="plan_1_price">
-									Monthly
-								</div>
-							</div>
-							<p class="muted" data-i18n="plan_1_sub">
-								Recurring coverage for small kitchens
-							</p>
-							<ul class="bullets">
-								<li data-i18n="plan_1_b1">Scheduled visits</li>
-								<li data-i18n="plan_1_b2">Monitoring + prevention</li>
-								<li data-i18n="plan_1_b3">Email support</li>
-							</ul>
-							<a
-								class="btn btn--ghost btn--full"
-								href="#contact"
-								data-i18n="cta_choose"
-								>Choose</a
-							>
-						</div>
-
-						<div class="card card--highlight">
-							<div class="plan-top">
-								<div class="plan-top__title" data-i18n="plan_2_title">
-									Restaurant Pro
-								</div>
-								<div class="plan-top__price" data-i18n="plan_2_price">
-									Monthly
-								</div>
-							</div>
-							<p class="muted" data-i18n="plan_2_sub">
-								Best for busy restaurants
-							</p>
-							<ul class="bullets">
-								<li data-i18n="plan_2_b1">More frequent visits</li>
-								<li data-i18n="plan_2_b2">Priority response</li>
-								<li data-i18n="plan_2_b3">Detailed service notes</li>
-							</ul>
-							<a
-								class="btn btn--primary btn--full"
-								href="#contact"
-								data-i18n="cta_choose"
-								>Choose</a
-							>
-						</div>
-
-						<div class="card">
-							<div class="plan-top">
-								<div class="plan-top__title" data-i18n="plan_3_title">
-									Home Visit
-								</div>
-								<div class="plan-top__price" data-i18n="plan_3_price">
-									One-time
-								</div>
-							</div>
-							<p class="muted" data-i18n="plan_3_sub">Inspection + treatment</p>
-							<ul class="bullets">
-								<li data-i18n="plan_3_b1">Fast booking</li>
-								<li data-i18n="plan_3_b2">Treatment + advice</li>
-								<li data-i18n="plan_3_b3">Optional follow-up</li>
-							</ul>
-							<a
-								class="btn btn--ghost btn--full"
-								href="#contact"
-								data-i18n="cta_choose"
-								>Choose</a
-							>
-						</div>
-					</div>
-
-					<div class="center">
 						<a
-							class="btn btn--primary"
-							href="#contact"
-							data-i18n="cta_exact_pricing"
-							>Get exact pricing</a
+							class="side-card__linkRow"
+							data-bind-attr="href:companyTelHref"
+							href="tel:+201226766076"
+							data-bind-text="companyPhone"
 						>
-						<p class="tiny muted" data-i18n="plans_note">
-							Replace plan text/prices with your real offers.
-						</p>
+							<svg class="sideIcon" viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									fill="currentColor"
+									d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"
+								/>
+							</svg>
+							+201226766076
+						</a>
 					</div>
-				</div>
-			</section>
-
-			<section id="faq" class="section section--alt">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="faq_eyebrow">FAQ</div>
-						<h2 data-i18n="faq_title">Common questions</h2>
-						<p class="muted" data-i18n="faq_text">
-							Quick answers. Ask anything else in the contact form.
-						</p>
-					</div>
-
-					<div class="faq">
-						<details>
-							<summary data-i18n="faq_q1">
-								Do you offer subscription service for restaurants?
-							</summary>
-							<div class="muted">
-								<span data-i18n="faq_a1"
-									>Yes. Restaurant service is designed as recurring visits with
-									prevention and follow-ups.</span
-								>
+					<div class="side-card">
+						<div class="side-card__titleRow">
+							<svg
+								class="sideTitleIcon sideTitleIcon--wa"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+							>
+								<path
+									fill="currentColor"
+									d="M12 2a10 10 0 0 0-8.66 15l-1.1 4.02 4.12-1.08A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.13l-.3-.18-2.45.64.66-2.39-.2-.31A8 8 0 1 1 12 20Zm4.6-5.3c-.25-.12-1.48-.73-1.7-.81-.23-.08-.4-.12-.56.12-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.25-.74-.66-1.23-1.48-1.38-1.73-.15-.25-.02-.38.1-.5.12-.12.25-.3.38-.45.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.74.59.25 1.05.4 1.4.51.59.19 1.12.16 1.54.1.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"
+								/>
+							</svg>
+							<div class="side-card__title" data-i18n="side_whatsapp">
+								WhatsApp
 							</div>
-						</details>
-						<details>
-							<summary data-i18n="faq_q2">
-								Can I buy your products without a service plan?
-							</summary>
-							<div class="muted">
-								<span data-i18n="faq_a2"
-									>Yes. Request product details and availability through the
-									contact form.</span
-								>
-							</div>
-						</details>
-						<details>
-							<summary data-i18n="faq_q3">
-								Do you handle roaches and rodents?
-							</summary>
-							<div class="muted">
-								<span data-i18n="faq_a3"
-									>Yes. We cover common insects (including roaches) and rodent
-									catch/prevention.</span
-								>
-							</div>
-						</details>
-						<details>
-							<summary data-i18n="faq_q4">How fast can you visit?</summary>
-							<div class="muted">
-								<span data-i18n="faq_a4"
-									>Depends on area and workload. Submit a request and we’ll
-									confirm the earliest slot.</span
-								>
-							</div>
-						</details>
-					</div>
-				</div>
-			</section>
-
-			<section id="contact" class="section">
-				<div class="container">
-					<div class="section-head">
-						<div class="eyebrow" data-i18n="contact_eyebrow">Contact</div>
-						<h2 data-i18n="contact_title">Get a quote</h2>
-						<p class="muted" data-i18n="contact_text">
-							Send your request. We reply by email (and can call if you leave a
-							phone number).
-						</p>
-					</div>
-
-					<div class="contact">
-						<div class="card">
-							<form id="contactForm" class="form">
-								<label class="label">
-									<span data-i18n="field_name">Name</span>
-									<input
-										name="name"
-										required
-										data-i18n-attr="placeholder:ph_name"
-										placeholder="Your name"
-									/>
-								</label>
-								<label class="label">
-									<span data-i18n="field_email">Email</span>
-									<input
-										name="email"
-										type="email"
-										required
-										data-i18n-attr="placeholder:ph_email"
-										placeholder="you@company.com"
-									/>
-								</label>
-								<label class="label">
-									<span data-i18n="field_phone">Phone (optional)</span>
-									<input
-										name="phone"
-										type="tel"
-										data-i18n-attr="placeholder:ph_phone"
-										placeholder="+201226766076"
-									/>
-								</label>
-								<label class="label">
-									<span data-i18n="field_interest">Interested in</span>
-									<select name="interest" required>
-										<option value="restaurant" data-i18n="opt_restaurant">
-											Restaurant subscription
-										</option>
-										<option value="home" data-i18n="opt_home">
-											Home visit
-										</option>
-										<option value="product" data-i18n="opt_product">
-											Products
-										</option>
-									</select>
-								</label>
-								<label class="label">
-									<span data-i18n="field_message">Message</span>
-									<textarea
-										name="message"
-										rows="6"
-										required
-										data-i18n-attr="placeholder:ph_message"
-										placeholder="Tell us the issue (roaches, rodents, etc), location, and preferred time."
-									></textarea>
-								</label>
-								<button
-									class="btn btn--primary btn--full"
-									type="submit"
-									data-i18n="cta_send"
-								>
-									Send
-								</button>
-								<p class="tiny muted">
-									<span data-i18n="contact_note"
-										>If no form endpoint is configured, this will open your
-										email client.</span
-									>
-								</p>
-								<p
-									id="contactStatus"
-									class="tiny muted"
-									role="status"
-									aria-live="polite"
-								></p>
-							</form>
 						</div>
-
-						<aside class="contact__side">
-							<div class="side-card">
-								<div class="side-card__titleRow">
-									<svg
-										class="sideTitleIcon"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-									>
-										<path
-											fill="currentColor"
-											d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"
-										/>
-									</svg>
-									<div class="side-card__title" data-i18n="side_email">
-										Email
-									</div>
-								</div>
-								<a
-									class="side-card__linkRow"
-									data-bind-attr="href:companyMailtoHref"
-									href="mailto:sharqawy@garsony.xyz"
-									data-bind-text="companyEmail"
+						<a
+							class="side-card__linkRow"
+							data-bind-attr="href:companyWhatsAppHref"
+							href="https://wa.me/201226766076"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<span data-bind-text="companyPhone">+201226766076</span>
+						</a>
+					</div>
+					<div class="side-card">
+						<div class="side-card__title" data-i18n="side_locations">
+							Locations
+						</div>
+						<div class="locationList">
+							<div class="locationRow">
+								<span class="side-card__text" data-i18n="city_cairo"
+									>Cairo</span
 								>
-									<svg class="sideIcon" viewBox="0 0 24 24" aria-hidden="true">
-										<path
-											fill="currentColor"
-											d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"
-										/>
-									</svg>
-									sharqawy@garsony.xyz
-								</a>
-							</div>
-							<div class="side-card">
-								<div class="side-card__titleRow">
-									<svg
-										class="sideTitleIcon"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-									>
-										<path
-											fill="currentColor"
-											d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"
-										/>
-									</svg>
-									<div class="side-card__title" data-i18n="side_phone">
-										Phone
-									</div>
-								</div>
 								<a
-									class="side-card__linkRow"
-									data-bind-attr="href:companyTelHref"
-									href="tel:+201226766076"
-									data-bind-text="companyPhone"
-								>
-									<svg class="sideIcon" viewBox="0 0 24 24" aria-hidden="true">
-										<path
-											fill="currentColor"
-											d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"
-										/>
-									</svg>
-									+201226766076
-								</a>
-							</div>
-							<div class="side-card">
-								<div class="side-card__titleRow">
-									<svg
-										class="sideTitleIcon sideTitleIcon--wa"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-									>
-										<path
-											fill="currentColor"
-											d="M12 2a10 10 0 0 0-8.66 15l-1.1 4.02 4.12-1.08A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.13l-.3-.18-2.45.64.66-2.39-.2-.31A8 8 0 1 1 12 20Zm4.6-5.3c-.25-.12-1.48-.73-1.7-.81-.23-.08-.4-.12-.56.12-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.25-.74-.66-1.23-1.48-1.38-1.73-.15-.25-.02-.38.1-.5.12-.12.25-.3.38-.45.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.74.59.25 1.05.4 1.4.51.59.19 1.12.16 1.54.1.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"
-										/>
-									</svg>
-									<div class="side-card__title" data-i18n="side_whatsapp">
-										WhatsApp
-									</div>
-								</div>
-								<a
-									class="side-card__linkRow"
-									data-bind-attr="href:companyWhatsAppHref"
-									href="https://wa.me/201226766076"
+									class="mapCta"
+									href="https://www.google.com/maps/search/?api=1&query=Cairo"
 									target="_blank"
 									rel="noopener noreferrer"
+									data-i18n="cta_open_map"
 								>
-									<svg
-										class="sideIcon sideIcon--wa"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-									>
+									<svg class="mapIcon" viewBox="0 0 24 24" aria-hidden="true">
 										<path
 											fill="currentColor"
-											d="M12 2a10 10 0 0 0-8.66 15l-1.1 4.02 4.12-1.08A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.13l-.3-.18-2.45.64.66-2.39-.2-.31A8 8 0 1 1 12 20Zm4.6-5.3c-.25-.12-1.48-.73-1.7-.81-.23-.08-.4-.12-.56.12-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.25-.74-.66-1.23-1.48-1.38-1.73-.15-.25-.02-.38.1-.5.12-.12.25-.3.38-.45.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.74.59.25 1.05.4 1.4.51.59.19 1.12.16 1.54.1.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"
+											d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
 										/>
 									</svg>
-									<span data-bind-text="companyPhone">+201226766076</span>
 								</a>
 							</div>
-							<div class="side-card">
-								<div class="side-card__title" data-i18n="side_locations">
-									Locations
-								</div>
-								<div class="locationList">
-									<div class="locationRow">
-										<span class="side-card__text" data-i18n="city_cairo"
-											>Cairo</span
-										>
-										<a
-											class="mapCta"
-											href="https://www.google.com/maps/search/?api=1&query=Cairo"
-											target="_blank"
-											rel="noopener noreferrer"
-											data-i18n="cta_open_map"
-										>
-											<svg
-												class="mapIcon"
-												viewBox="0 0 24 24"
-												aria-hidden="true"
-											>
-												<path
-													fill="currentColor"
-													d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
-												/>
-											</svg>
-										</a>
-									</div>
-									<div class="locationRow">
-										<span class="side-card__text" data-i18n="city_tanta"
-											>Tanta</span
-										>
-										<a
-											class="mapCta"
-											href="https://www.google.com/maps/search/?api=1&query=Tanta"
-											target="_blank"
-											rel="noopener noreferrer"
-											data-i18n="cta_open_map"
-										>
-											<svg
-												class="mapIcon"
-												viewBox="0 0 24 24"
-												aria-hidden="true"
-											>
-												<path
-													fill="currentColor"
-													d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
-												/>
-											</svg>
-										</a>
-									</div>
-									<div class="locationRow">
-										<span class="side-card__text" data-i18n="city_alex"
-											>Alexandria</span
-										>
-										<a
-											class="mapCta"
-											href="https://www.google.com/maps/search/?api=1&query=Alexandria%2C%20Egypt"
-											target="_blank"
-											rel="noopener noreferrer"
-											data-i18n="cta_open_map"
-										>
-											<svg
-												class="mapIcon"
-												viewBox="0 0 24 24"
-												aria-hidden="true"
-											>
-												<path
-													fill="currentColor"
-													d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
-												/>
-											</svg>
-										</a>
-									</div>
-								</div>
+							<div class="locationRow">
+								<span class="side-card__text" data-i18n="city_tanta"
+									>Tanta</span
+								>
+								<a
+									class="mapCta"
+									href="https://www.google.com/maps/search/?api=1&query=Tanta"
+									target="_blank"
+									rel="noopener noreferrer"
+									data-i18n="cta_open_map"
+								>
+									<svg class="mapIcon" viewBox="0 0 24 24" aria-hidden="true">
+										<path
+											fill="currentColor"
+											d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
+										/>
+									</svg>
+								</a>
 							</div>
-						</aside>
+							<div class="locationRow">
+								<span class="side-card__text" data-i18n="city_alex"
+									>Alexandria</span
+								>
+								<a
+									class="mapCta"
+									href="https://www.google.com/maps/search/?api=1&query=Alexandria%2C%20Egypt"
+									target="_blank"
+									rel="noopener noreferrer"
+									data-i18n="cta_open_map"
+								>
+									<svg class="mapIcon" viewBox="0 0 24 24" aria-hidden="true">
+										<path
+											fill="currentColor"
+											d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</section>
-		</main>
+				</aside>
+			</div>
+		</div>
+	</section>
+</main>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Elsharqawy pest control logo mark">
+  <g fill="#0E7490">
+    <circle cx="32" cy="16" r="6" />
+    <ellipse cx="32" cy="36" rx="12" ry="16" />
+    <ellipse cx="22" cy="30" rx="7" ry="10" opacity="0.9" />
+    <ellipse cx="42" cy="30" rx="7" ry="10" opacity="0.9" />
+    <path d="M25 10c-4-4-8-5-12-5v4c3 0 6 1 9 4l3-3Z" />
+    <path d="M39 10c4-4 8-5 12-5v4c-3 0-6 1-9 4l-3-3Z" />
+    <path d="M18 24h6v4h-6z" />
+    <path d="M40 24h6v4h-6z" />
+    <path d="M16 34h7v4h-7z" />
+    <path d="M41 34h7v4h-7z" />
+    <path d="M18 44h6v4h-6z" />
+    <path d="M40 44h6v4h-6z" />
+  </g>
+</svg>
+

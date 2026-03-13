@@ -110,10 +110,30 @@ a {
 }
 
 .brand__mark {
+	position: relative;
 	width: 34px;
 	height: 34px;
 	border-radius: 10px;
 	background: linear-gradient(135deg, var(--primary), var(--primaryDark));
+	overflow: hidden;
+}
+
+.brand__mark::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.92);
+	-webkit-mask-image: url('./assets/logo-mark.svg');
+	mask-image: url('./assets/logo-mark.svg');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
 }
 
 .brand__text {
